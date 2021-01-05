@@ -20,6 +20,11 @@ final class PhpParser
         $this->traverser = $traverser;
     }
 
+    public function addVisitor(NodeVisitor $visitor): void
+    {
+        $this->traverser->addVisitor($visitor);
+    }
+
     public function parse(string $fileContent): void
     {
         /** @var Stmt[] */
