@@ -1,0 +1,36 @@
+{
+    "name": "pattisahusiwa/lcom",
+    "description": "Library to calculate Lack of Cohesion of Methods (LCOM) metric",
+    "type": "library",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Asis Pattisahusiwa",
+            "email": "asis.pattisahusiwa@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Pts\\Lcom\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Pts\\Lcom\\Tests\\": "tests"
+        }
+    },
+    "require": {
+        "php": "^7.1 || ^8.0",
+        "nikic/php-parser": "^4.10"
+    },
+    "require-dev": {
+        "pattisahusiwa/coding-standard": "^0.4.0",
+        "phpunit/phpunit": "^9.5"
+    }
+}

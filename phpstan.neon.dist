@@ -1,0 +1,9 @@
+parameters:
+    level: max
+    paths:
+        - src
+
+    excludes_analyse:
+
+    # Miscellaneous parameters
+    inferPrivatePropertyTypeFromConstructor: true
